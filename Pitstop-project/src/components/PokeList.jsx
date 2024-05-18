@@ -1,7 +1,10 @@
 function PokeList() {
     function getPokemon (){
-        fetch("https://pokeapi.co/api/v2/pokemon");
-
+        fetch("https://pokeapi.co/api/v2/pokemon")
+        .then(function () {
+            console.log("resposta voltou");
+        });
+        console.log("Hello");
     }
   return (
     <>
