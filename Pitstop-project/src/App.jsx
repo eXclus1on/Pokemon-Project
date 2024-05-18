@@ -1,12 +1,11 @@
 import PokeList from "./components/PokeList";
 
 function App() {
-  return (<>
-    <PokeList />
-  </>
-  
+  return (
+    <>
+      <PokeList />
+    </>
   );
 }
 
-
-export default App
+export default App;
