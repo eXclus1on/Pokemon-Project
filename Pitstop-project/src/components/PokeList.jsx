@@ -1,14 +1,16 @@
 function PokeList() {
-    function getPokemon (){
-        fetch("https://pokeapi.co/api/v2/pokemon")
-        .then(function () {
-            console.log("resposta voltou");
-        });
-        console.log("Hello");
-    }
+  function getPokemon() {
+    const promiseResponse = fetch("https://pokeapi.co/api/v2/pokemon");
+
+    promiseResponse.then(function (response) {
+      console.log("response.json");
+    });
+    console.log("Hello");
+  }
+
   return (
     <>
-    <button onClick={getPokemon}>Get Pokemon</button>
+      <button onClick={getPokemon}>Get Pokemon</button>
       <ul>
         <li>Pikachu</li>
         <li>Squirtel</li>
